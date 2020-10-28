@@ -13,13 +13,19 @@ sozluk = {'İsim':pd.Series(['Ada','Cem','Sibel','Ahmet','Mehmet','Ali','Veli',
 
 df = pd.DataFrame(sozluk)
 
-# df.head() #ilk 5 satırı görüntüler
-# df.tail() #son 5 satırı görüntüler
-# df.sample() #rastgele 5 satırı görüntüler
-# df.shape() #satır ve sutun sayısını görüntüler
-# df.info() #veri hakkında bilgi verir
+# df.head() ilk 5 satırı görüntüler
+# df.tail() son 5 satırı görüntüler
+# df.sample() rastgele 5 satırı görüntüler
+# df.shape() satır ve sutun sayısını görüntüler
+# df.info() veri hakkında bilgi verir
+# df['Yaş']  nitelik seçerek kayır gösterme
+# df['Yaş','İsim'] [:5] nitelik seçerek ilk 5 kayıt
+# df[['Yas','İsim']]  birden fazla nitelik seçme
 
-df[]
+# df[(df['Yas']>30) & (df['Puan']>50)]  koşullu nitelik isteme
+
+#puery() fonksiyonu ile filtreleme
+#df_filtered = df.query('Yaş>30 & Puan>50')
 
 
 
